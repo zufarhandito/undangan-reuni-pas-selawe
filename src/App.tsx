@@ -9,7 +9,7 @@ function App() {
   const renderUndangan = () => {
     switch (open) {
       case true:
-        return <RenderIsiUndangan setOpen={setOpen} />;
+        return <RenderIsiUndangan />;
       case false:
         return <RenderCoverUndangan setOpen={setOpen} />;
       default:
