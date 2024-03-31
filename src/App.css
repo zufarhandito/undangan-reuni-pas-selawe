@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@300..700&family=Kaushan+Script&display=swap');
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f2;
+  font-family: 'Akshar', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #29211d;
+}
+
+.font-kaushan {
+  font-family: 'Kaushan Script', cursive;
+}
+
+#covertitle {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+
+#isiundangan {
+  background-image: url('./assets/bgmap2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+#isiundangan section {
+  scroll-snap-align: start;
+}
