@@ -17,9 +17,9 @@ const IsiUndanganKetiga = () => {
   const handleKehadiran = async (status: StatusType) => {
     setLoading(true);
 
-    if (await hasntAbsenceYet()) {
+    if ((await hasntAbsenceYet()) && nama) {
       const payload = {
-        nama: nama ?? 'Tanpa Nama',
+        nama: nama,
         status,
       };
 

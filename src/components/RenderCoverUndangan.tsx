@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import ButtonSurat from './ButtonSurat';
 import { motion } from 'framer-motion';
 import { defaultPanggilan } from '../constants/all';
+import mascot from '../assets/mascot.png';
 
 export default function RenderCoverUndangan({
   setOpen,
@@ -31,12 +32,7 @@ export default function RenderCoverUndangan({
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.6 }}
       >
-        <img
-          src="./src/assets/mascot.png"
-          alt="backdrop_mascot"
-          width={350}
-          height={400}
-        />
+        <img src={mascot} alt="backdrop_mascot" width={350} height={400} />
       </motion.div>
       <motion.div
         initial={{ y: 50, opacity: 0 }}
