@@ -28,6 +28,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: contain;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
